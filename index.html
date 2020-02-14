@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <title>My Akan Name</title>
+ </head> 
+ <body>
+   <h1>What's My Akan Name?</h1>
+   <p>Get your own Akan (Ghanian) name based on your Gender, Birth date and Birth year today!!</p>
+   <div class="wrapper">
+     <h2>Please enter your Birthdate and select your Gender</h2>
+     <div id="errormessage"></div>
+     <form id="mydetails">
+       <div class="inputfield">
+        <p>What is your name:<input type="text" id="name"></p>
+       </div>
+       <div class = "inputfield">
+         <input type="date" placeholder="DD/MM/YY" id="birthdate">
+       </div>
+       <div class = "inputfield">
+        <input type="checkbox" id="gender">
+      </div>
+      <input type="button" value="submit" onclick="return akanName()">
+    </form> 
+   </div>
+   
+ </body>
+</html>

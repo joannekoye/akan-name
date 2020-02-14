@@ -1,0 +1,26 @@
+body {
+  font-family: cursive;
+  font-style: normal;
+  background-color: aqua;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 25px;
+  padding: 15px;
+}
+.wrapper h2 {
+  text-align: center;
+}
+.wrapper .inputfield{
+  margin-bottom: 10px;
+}
+.wrapper #errormessage {
+  margin-bottom: 20px;
+  background-color: red;
+  padding: 0px;
+  text-align: center;
+}
