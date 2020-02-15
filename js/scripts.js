@@ -20,49 +20,52 @@ function akanName (){
   else if (dd<1||dd>31 || mm===2 && dd>29) {
     alert("Invalid date!")
   }
-  else {
-    return true
+  else if (dd==""||mm==""||yyyy==""||gender==""){
+    alert("Input Required Data please")
   }
-  switch(gender){
-    case gender = "Male" :
-      switch (result){
-        case(0):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[0]+". Your Akan name is " + maleNames[0];
-        case(1):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[1]+". Your Akan name is " + maleNames[1];
-        case(2):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[2]+". Your Akan name is " + maleNames[2];
-        case(3):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[3]+". Your Akan name is " + maleNames[3];
-        case(4):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[4]+". Your Akan name is " + maleNames[4];
-        case(5):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[5]+". Your Akan name is " + maleNames[5];
-        case(6):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[6]+". Your Akan name is " + maleNames[6];
-      }
-      break
-    case gender = "Female" :
-      switch (result){
-        case(0):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[0]+". Your Akan name is " + femaleNames[0];
-        case(1):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[1]+". Your Akan name is " + femaleNames[1];
-        case(2):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[2]+". Your Akan name is " + femaleNames[2];
-        case(3):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[3]+". Your Akan name is " + femaleNames[3];
-        case(4):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[4]+". Your Akan name is " + femaleNames[4];
-        case(5):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[5]+". Your Akan name is " + femaleNames[5];
-        case(6):
-        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[6]+". Your Akan name is " + femaleNames[6];
-      }
-      break
-      default:
-        alert("error!");
+  else if(result==0 && gender==='Male'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[0]+". Your Akan name is " + maleNames[0];
   }
+  else if(result==1 && gender==='Male'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[1]+". Your Akan name is " + maleNames[1];
+  }
+  else if(result==2 && gender==='Male'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[2]+". Your Akan name is " + maleNames[2];
+  }
+  else if(result==3 && gender==='Male'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[3]+". Your Akan name is " + maleNames[3];
+  }
+  else if(result==4 && gender==='Male'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[4]+". Your Akan name is " + maleNames[4];
+  }
+  else if(result==5 && gender==='Male'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[5]+". Your Akan name is " + maleNames[5];
+  }
+  else if(result==6 && gender==='Male'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[6]+". Your Akan name is " + maleNames[6];
+  }
+  else if(result==0 && gender==='Female'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[0]+". Your Akan name is " + femaleNames[0];
+  }
+  else if(result==1 && gender==='Female'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[1]+". Your Akan name is " + femaleNames[1];
+  }
+  else if(result==2 && gender==='Female'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[2]+". Your Akan name is " + femaleNames[2];
+  }
+  else if(result==3 && gender==='Female'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[3]+". Your Akan name is " + femaleNames[3];
+  }
+  else if(result==4 && gender==='Female'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[4]+". Your Akan name is " + femaleNames[4];
+  }
+  else if(result==5 && gender==='Female'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[5]+". Your Akan name is " + femaleNames[5];
+  }
+  else if(result==6 && gender==='Female'){
+    document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[6]+". Your Akan name is " + femaleNames[6];
+  }
+    
 
 }
   
