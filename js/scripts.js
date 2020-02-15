@@ -21,7 +21,7 @@ function akanName (){
     alert("Invalid date!")
   }
   else {
-    alert("Input Data please")
+    return true
   }
   switch(gender){
     case gender = "Male" :
