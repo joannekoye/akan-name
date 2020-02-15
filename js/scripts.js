@@ -11,16 +11,22 @@ function akanName (){
   var femaleNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
   var daysOfWeek = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
-  var gender = document.getElementsByName("gender").value;
+  var gender = document.getElementsByName("gender");
+  if(gender.checked == true){
+    gender = "Male"
+  }
+  else {
+    gender= "Female"
+  }
   
   if (mm<1 || mm>12) {
     alert("Invalid Month!");
 
   }
-  else if (dd<1||dd>31 || mm===2 && dd>29) {
+  else if (dd<1||dd>31 || mm==2 && dd>29) {
     alert("Invalid date!")
   }
-  else if (dd.toString().length<1||mm.toString().length<1||yyyy.toString().length<4||gender.length < 4){
+  else if (yyyy.toString().length<4||gender.length < 4){
     alert("Input Required Data please")
   }
   else if(result==0 && gender==='Male'){
