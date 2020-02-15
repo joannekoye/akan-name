@@ -1,11 +1,16 @@
 body {
   font-family: cursive;
   font-style: normal;
-  background-color: aqua;
+  background-image: url(/home/joan/Documents/moringa-school-projects/akan-name/images/ZGK_kente.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  
 }
 .wrapper {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
@@ -15,7 +20,7 @@ body {
 .wrapper h2 {
   text-align: center;
 }
-.wrapper .inputfield{
+.wrapper .inputfield {
   margin-bottom: 10px;
 }
 .wrapper #errormessage {

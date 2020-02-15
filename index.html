@@ -2,27 +2,41 @@
 <html>
  <head>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <title>My Akan Name</title>
  </head> 
  <body>
-   <h1>What's My Akan Name?</h1>
-   <p>Get your own Akan (Ghanian) name based on your Gender, Birth date and Birth year today!!</p>
+   <div class="container">
+    <div class="jumbotron">
+      <h1>What's My Akan Name?</h1>
+      <p>Get your own Akan (Ghanian) name based on your Gender, Birth date and Birth year today!!</p>
+    </div>
+  </div>
    <div class="wrapper">
      <h2>Please enter your Birthdate and select your Gender</h2>
-     <div id="errormessage"></div>
+     
      <form id="mydetails">
-       <div class="inputfield">
-        <p>What is your name:<input type="text" id="name"></p>
+       <div class = "inputfield">
+         <label>On what day were you born?</label><br>
+         <input type="number" placeholder="Day of the Month e.g. 23" id="birth-day">
        </div>
        <div class = "inputfield">
-         <input type="date" placeholder="DD/MM/YY" id="birthdate">
-       </div>
-       <div class = "inputfield">
-        <input type="checkbox" id="gender">
+        <label>Which month were you born in?</label><br>
+        <input type="number" placeholder="Month e.g. 02 for February" id="birth-month">
       </div>
-      <input type="button" value="submit" onsubmit="return akanName()">
+      <div class = "inputfield">
+        <label>Which year were you born in?</label><br>
+        <input type="number" placeholder="Year of birth" id="birth-year">
+      </div>
+       <div class = "inputfield">
+         <label>Please select your gender:</label>
+        <input type="radio" name="gender" id="gender" value="Male"> Male
+        <input type="radio" name="gender" id="gender" value="Female"> Female
+
+      </div> 
+      <button onclick= "AkanName()">Get Akan Name</button>
     </form> 
    </div>
-   
+   <script src="js/scripts.js"></script>
  </body>
 </html>
