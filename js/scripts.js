@@ -27,12 +27,42 @@ function akanName (){
     case gender = "Male" :
       switch (result){
         case(0):
-          document.getElementById("result").innerHTML = 
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[0]+". Your Akan name is " + maleNames[0];
+        case(1):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[1]+". Your Akan name is " + maleNames[1];
+        case(2):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[2]+". Your Akan name is " + maleNames[2];
+        case(3):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[3]+". Your Akan name is " + maleNames[3];
+        case(4):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[4]+". Your Akan name is " + maleNames[4];
+        case(5):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[5]+". Your Akan name is " + maleNames[5];
+        case(6):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[6]+". Your Akan name is " + maleNames[6];
       }
+      break
+    case gender = "Female" :
+      switch (result){
+        case(0):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[0]+". Your Akan name is " + femaleNames[0];
+        case(1):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[1]+". Your Akan name is " + femaleNames[1];
+        case(2):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[2]+". Your Akan name is " + femaleNames[2];
+        case(3):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[3]+". Your Akan name is " + femaleNames[3];
+        case(4):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[4]+". Your Akan name is " + femaleNames[4];
+        case(5):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[5]+". Your Akan name is " + femaleNames[5];
+        case(6):
+        document.getElementById("result").innerHTML = "You were born on a " +daysOfWeek[6]+". Your Akan name is " + femaleNames[6];
+      }
+      break
+      default:
+        alert("error!");
   }
-
-
-
 
 }
   
