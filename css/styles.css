@@ -8,6 +8,9 @@ body {
   image-rendering: crisp-edges;
   
 }
+h1 {
+  color: antiquewhite;
+}
 .wrapper {
   position: absolute;
   top: 60%;
