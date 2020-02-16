@@ -20,6 +20,10 @@ body {
 .wrapper h2 {
   text-align: center;
 }
+.wrapper h3 {
+  text-align: center;
+  color: black;
+}
 .wrapper .inputfield {
   margin-bottom: 10px;
 }
