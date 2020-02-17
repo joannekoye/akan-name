@@ -28,10 +28,10 @@ function akanName (){
     alert("Input Valid Year of Birth please");
   }
   else if(gender==="Male"){
-    document.getElementById("result").innerHTML = "You were born on a " + daysOfTheWeek[result]+ ". Your Akan name is " + maleNames[result];
+    alert("You were born on a " + daysOfTheWeek[result]+ ". Your Akan name is " + maleNames[result]);
   }
   else if(gender==="Female"){
-    document.getElementById("result").innerHTML = "You were born on a " + daysOfTheWeek[result]+ ". Your Akan name is " + femaleNames[result];
+    alert("You were born on a " + daysOfTheWeek[result]+ ". Your Akan name is " + femaleNames[result]);
   }
   else{
     alert("error!");
