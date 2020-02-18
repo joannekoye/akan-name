@@ -11,7 +11,7 @@ This application uses a HTML form to collect user information (birthday, month a
 * Click the 'get akan name' button
 
 ## Known Bugs
-The code does not return an accurate Akan name. Clicking the button may cause the webpage to reload or produce an error alert. Background image is not available on live site.
+The code returns female akan names.
 ## Technologies Used
 HTML was used to frame the application. Bootstrap and custom css sheets were used as well. Javascript was used in the backend of the program.
 ## Support and contact details
